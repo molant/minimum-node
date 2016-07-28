@@ -1,0 +1,23 @@
+{
+  "name": "minimum-node",
+  "version": "1.0.0",
+  "description": "minimum node",
+  "main": "index.js",
+  "dependencies": {
+    "lodash": "^4.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/molant/minimum-node.git"
+  },
+  "author": "molant",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/molant/minimum-node/issues"
+  },
+  "homepage": "https://github.com/molant/minimum-node#readme"
+}
