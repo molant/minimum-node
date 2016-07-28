@@ -9,7 +9,7 @@ var port = process.env.port || 8080;
 function handleRequest(req, res) {
 	res.statusCode = 200;
 	res.setHeader('Content-Type', 'text/plain');
-	res.end('Hello World 2 - http - ' + require('process').version);
+	res.end('Hello World 3 - http - ' + require('process').version);
 }
 
 //Create a server
