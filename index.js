@@ -1,6 +1,7 @@
 'use strict';
 //Lets require/import the HTTP module
 var http = require('http');
+var _ = require('lodash');
 
 //Lets define a port we want to listen to
 var port = process.env.port || 8080;
@@ -9,7 +10,11 @@ var port = process.env.port || 8080;
 function handleRequest(req, res) {
 	res.statusCode = 200;
 	res.setHeader('Content-Type', 'text/plain');
-	res.end('Hello World 3 - http - ' + require('process').version);
+	var message = _.reduce([1,2,3,4,5], function (total, n) {
+		return total + n;
+	}, 0);
+	message += ' Hello World - http - ' + require('process').version;
+	res.end(message);
 }
 
 //Create a server
